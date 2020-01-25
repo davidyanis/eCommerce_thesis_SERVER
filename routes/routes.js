@@ -158,27 +158,5 @@ router.post('/checkout', async (req, res, next) => {
   }
 })
 
-// router.post('/upload/image', upload.single('imageSrc'), async (req, res, next) => {
-//   const endpoint = "wp-json/wp/v2/media";
-//   try {
-//     let response = await axios.post(constants.storeURL + endpoint, 
-//       fs.createReadStream(req.file.path), {
-//       headers: {
-//         'Content-Type': 'application/x-www-form-urlencoded',
-//         'Content-Disposition': 'attachment; filename=test.jpg'
-//       },
-//       auth: {
-//         username: 'taskville',
-//         password: 'liuzhou1'
-//       },
-//     })
-    
-//     res.send(response.data.source_url)
-//   } catch (err) {
-//     console.log(err)
-//   }
-
-//   next()
-// })
 
 module.exports = router;
