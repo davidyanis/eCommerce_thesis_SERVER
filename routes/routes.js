@@ -103,12 +103,10 @@ router.post('/login', async (req, res, next) => {
       }
     })
 
-    console.log(response.data)
-   
     res.send(response.data)
   } catch (err) {
     res.status(err.response.status).send(err.response.statusText)
-    console.log(err.response.status + " " + err.response.statusText)
+    console.error(err.response.status + " " + err.response.statusText)
   }
 
   next()
@@ -143,7 +141,7 @@ router.post('/checkout', async (req, res, next) => {
   for (const product of req.body) {
     product.amount *= 100
   }
-  console.log(req.body)
+  
   try {
       const session = await stripe.checkout.sessions.create({
           payment_method_types: ['card'],
