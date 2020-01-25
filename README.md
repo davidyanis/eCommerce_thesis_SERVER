@@ -1,5 +1,5 @@
 # Server for master thesis
-Serverside built with NodeJS
+Serverside built with NodeJS. For making the API requests to Wordpress/Woocommerce.
 
 ## Project setup
 ```
