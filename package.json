@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce_thesis_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "file-system": "^2.2.2",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2",
+    "oauth-1.0a": "^2.2.6",
+    "request": "^2.88.0",
+    "stripe": "^8.4.0",
+    "wpapi": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
